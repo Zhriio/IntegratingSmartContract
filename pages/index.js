@@ -106,9 +106,39 @@ export default function HomePage() {
           </button>
         </div>
         <button className="btn" onClick={open}>
-          Open Piggybank
+          Open Piggy bank!
         </button>
+
+        <style jsx>{`
+          .btn {
+            padding: 10px 15px;
+            margin: 10px;
+            font-size: 16px;
+            background-color: #0070f3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+
+          .btn:hover {
+            background-color: #005bb5;
+          }
+
+          .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+          }
+
+          p {
+            font-size: 18px;
+            margin: 10px 0;
+          }
+        `}</style>
       </div>
+
     )
   }
 
@@ -123,33 +153,6 @@ export default function HomePage() {
           text-align: center;
           font-family: Arial, sans-serif;
           padding: 20px;
-        }
-
-        .btn {
-          padding: 10px 15px;
-          margin: 10px;
-          font-size: 16px;
-          background-color: #0070f3;
-          color: white;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-        }
-
-        .btn:hover {
-          background-color: #005bb5;
-        }
-
-        .button-group {
-          display: flex;
-          justify-content: center;
-          gap: 10px;
-          margin: 20px 0;
-        }
-
-        p {
-          font-size: 18px;
-          margin: 10px 0;
         }
       `}
       </style>
